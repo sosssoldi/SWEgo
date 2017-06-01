@@ -22,42 +22,35 @@
       </nav>
     </header>
     <input type="search" id="searchUC" placeholder="Ricerca..." />
+    <a href=#>Inserisci Use Case</a>
+    <form id="checkColumn">
+      <fieldset>
+        <legend>Colonne da visualizzare</legend><br>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="codice" value="codice"/>Codice</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="nome" value="nome"/>Nome</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="descrizione" value="descrizione"/>Descrizione</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="precondizione" value="precondizione"/>Precondizione</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="postcondizione" value="postcondizione"/>Postcondizione</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="principale" value="principale"/>Scenario principale</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="alternativo" value="alternativo"/>Scenario alternativo</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="padre" value="padre"/>Padre</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="inclusioni" value="inclusioni"/>Inclusioni</label>
+        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="estensioni" value="estensioni"/>Estensioni</label>
+      </fieldset>
+    </form>
     <table summary="Nella Tabella viene fornito un elenco di Use Case. Ogni riga descrive uno Use Case con l'indicazione di codice, nome, descrizione, pre e post condizione.">
       <tr>
         <th scope="col">Codice</th>
         <th scope="col">Nome</th>
         <th scope="col">Descrizione</th>
-        <th scope="col">Scenario principale</th>
         <th scope="col">Precondizione</th>
         <th scope="col">Postcondizione</th>
+        <th scope="col">Scenario principale</th>
         <th scope="col">Scenario alternativo</th>
+        <th scope="col">Padre</th>
+        <th scope="col">Inclusioni</th>
+        <th scope="col">Estensioni</th>
         <th scope="col">Operazioni</th>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>adfjka ajkf jf sjdf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>
-          <a href="#"><button type="button">Modifica</button></a>
-          <a href="deleteUseCase.html"><button type="button">Elimina</button></a>
-        </td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>adfjka ajkf jf sjdf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>faskfn sdf asfasfna nasdjfn askjfnaksjfn ajsfakjsfnkajsf</td>
-        <td>
-          <a href="#"><button type="button">Modifica</button></a>
-          <a href="deleteUseCase.html"><button type="button">Elimina</button></a>
-        </td>
       </tr>
     </table>
     <footer>

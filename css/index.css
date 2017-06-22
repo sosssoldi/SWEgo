@@ -15,31 +15,46 @@ body
   background: #ffffff url("../image/bckg.png");
 }
 
-#navbar
-{
-  list-style-type: none;
-  text-align: center;
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 58, 58);
 }
 
-#navbar li
-{
+#navbar li {
+  float: left;
+}
 
+#navbar li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.875em 1em;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #111111;
 }
 
 #logo
 {
   text-align: center;
   background-image: url("../image/stripes.png");
+  /*da cambiare con colore bckg + borderbottom roso*/
   background-size: 100% 100%;
   margin: 0 auto;
-  height: 25em;
+  height: 17em;
   padding-bottom: 0.5em;
 }
 
 #logo img
 {
   height: 10em;
-  margin-top: 7.5em;
+  margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
 }

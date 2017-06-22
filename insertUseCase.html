@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>SWEgo - Inserisci Use Case</title>
+		<meta name="title" content="SWEgo - Inserisci Use Case" />
+		<meta name="description" content="Inserisci Use Case" />
+		<meta name="keywords" content="SWEgo, Use Case, Inserisci" />
+		<meta name="author" content="Luca Bertolini, Marco Bonolo, Mauro Carlin, Nicola Tintorri" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="script/uc.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>SWEgo</h1>
+			<nav>
+				<ul>
+					<li>Voce menu 1</li>
+					<li>Voce menu 2</li>
+					<li>Voce menu 3</li>
+				</ul>
+			</nav>
+		</header>
+		<h2>INSERISCI USE CASE</h2>
+		<form method="post" action="#">
+			<fieldset>
+				<label for="insertNameUC">Nome</label>
+				<input id="insertNameUC" name="nome" type="text" required="required" />
+				<label for="insertPadreUC">Padre</label>
+				<select id="insertPadreUC" name="padre">
+					<option>Nessuno</option>
+					<option>1.1.1</option>
+					<option>2.5.7</option>
+				</select>
+				<label for="insertDescriptionUC">Descrizione</label>
+				<textarea id="insertDescriptionUC" name="descrizione" required="required"></textarea>
+				<label for="insertPreUC">Precondizione</label>
+				<textarea id="insertPreUC" name="pre" required="required"></textarea>
+				<label for="insertPostUC">Postcondizione</label>
+				<textarea id="insertPostUC" name="post" required="required"></textarea>
+				<label for="insertMainScenarioUC">Scenario principale</label>
+				<textarea id="insertMainScenarioUC" name="principale" required="required"></textarea>
+				<label for="insertAlternativeScenarioUC">Scenario alternativo</label>
+				<textarea id="insertAlternativeScenarioUC" name="alternativo" required="required"></textarea>
+				<label for="insertExtendUC">Estensione</label>
+				<select id="insertExtendUC" name="estensione">
+					<option>Nessuno</option>
+					<option>1.6.5</option>
+					<option>2.1.1</option>
+				</select>
+				<label for="insertIncludeUC">Inclusione</label>
+				<select id="insertIncludeUC" name="inclusione">
+					<option>Nessuno</option>
+					<option>1.1.5</option>
+					<option>2.3.6</option>
+				</select>
+				<fieldset>
+					<label for="insertActorsSelectorUC">Seleziona attori</label>
+					<select id="insertActorsSelectorUC" name="selezionaAttori" multiple="multiple" onChange="addActor();">
+						<option>Mauro</option>
+						<option>Marco</option>
+					</select>
+					<label for="insertUCSelectedActors">Attori selezionati</label>
+					<select id="insertUCSelectedActors" name="attoriSelezionati" multiple="multiple" onChange="removeActor();">
+					</select>
+				</fieldset>
+				<label for="insertRequirementsUC">Requisiti correlati</label>
+				<select id="insertRequirementsUC" name="requisito">
+					<option>RF 2.1</option>
+					<option>RQ 2.3</option>
+				</select>
+				<input name="submit" type="submit" value="Inserisci" />
+			</fieldset>
+		</form>
+	</body>
+</html>

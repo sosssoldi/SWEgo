@@ -23,7 +23,7 @@
 			</nav>
 		</header>
 		<h2>ATTORI DEL SISTEMA</h2>
-		<ul id="actors_list">
+		<ul id="actorsList">
 			<li>
 				<h3>Nome attore 1</h3>
 				<p>Descrizione</p>
@@ -37,14 +37,12 @@
 		</ul>
 		<form method="post" action="#" onSubmit="addActor(); return false;">
 			<fieldset>
-				<label for="nome">Nome</label>
-				<input id="nome" name="nome" type="text" required="required" autocomplete="off" />
+				<label for="actorName">Nome</label>
+				<input id="actorName" name="nome" type="text" required="required" autocomplete="off" />
+				<label for="actorDescription">Descrizione</label>
+				<textarea id="actorDescription" name="descrizione" maxlength="1000" required="required"></textarea>
+				<input name="submit" type="submit" value="Inserisci" />
 			</fieldset>
-			<fieldset>
-				<label for="descrizione">Descrizione</label>
-				<textarea id="descrizione" maxlength="1000" required="required"></textarea>
-			</fieldset>
-			<input type="submit" value="Inserisci" />
 		</form>
 		<footer>
 		</footer>

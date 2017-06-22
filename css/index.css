@@ -1,0 +1,112 @@
+@font-face {
+    font-family: primaryFont;
+    src: url("../font/Roboto.ttf");
+}
+
+html, body
+{
+  margin: 0;
+  padding: 0;
+  font-family: primaryFont;
+}
+
+body
+{
+  background: #ffffff url("../image/bckg.png");
+}
+
+#navbar
+{
+  list-style-type: none;
+  text-align: center;
+}
+
+#navbar li
+{
+
+}
+
+#logo
+{
+  text-align: center;
+  background-image: url("../image/stripes.png");
+  background-size: 100% 100%;
+  margin: 0 auto;
+  height: 25em;
+  padding-bottom: 0.5em;
+}
+
+#logo img
+{
+  height: 10em;
+  margin-top: 7.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#containerBlocksTitle
+{
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.blockLogo
+{
+  float: left;
+  width: 15%;
+  text-align: center;
+  background-color: rgb(255, 58, 58);
+  border-radius: 1em 0 0 1em;
+  height: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#logoWhat img
+{
+  width: 5em;
+}
+
+.blockTitle
+{
+  width: 85%;
+  margin-left: 15%;
+  text-align: center;
+  height: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgb(221, 221, 221);
+  border-radius: 0 1em 0 0;
+  border-right: 0.2em solid rgb(221, 221, 221);
+
+}
+
+.blockDescription
+{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 15%;
+  width: 85%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 0.2em solid rgb(149, 149, 149);
+  border-radius: 0 0 1em 1em;
+  background-color: rgb(221, 221, 221);
+}
+
+#titleWhat
+{
+
+}
+
+#titleHow
+{
+
+}
+
+#descriptionHow
+{
+  margin-bottom: 1em;
+}

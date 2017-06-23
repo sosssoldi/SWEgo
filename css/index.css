@@ -1,4 +1,11 @@
-@font-face {
+*
+{
+  margin: 0em;
+  padding: 0em;
+}
+
+@font-face
+{
     font-family: primaryFont;
     src: url("../font/Roboto.ttf");
 }
@@ -27,19 +34,26 @@ header
   margin-bottom: 2em;
 }
 
-#navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav
+{
   overflow: hidden;
   background-color: rgb(255, 58, 58);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-#navbar li {
+nav ul
+{
+  list-style-type: none;
+}
+
+nav li
+{
   float: left;
 }
 
-#navbar li a
+nav li a
 {
   display: block;
   color: white;
@@ -48,28 +62,26 @@ header
   text-decoration: none;
 }
 
-#navbar li a:hover {
+nav li a:hover {
   background-color: #111111;
 }
 
 #logo
-{
-  text-align: center;
-  background-image: url("../image/stripes.png");
-  /*da cambiare con colore bckg + borderbottom roso*/
-  background-size: 100% 100%;
-  margin: 0 auto;
-  padding-bottom: 0.5em;
-}
-
-#logo h1
 {
   background-image: url("../image/logoFinale.png");
   background-repeat: no-repeat;
   background-size: 50% 90%;
   background-position: center;
   height: 5em;
-  margin: 0 auto;
+  margin: 1.4em auto 0 auto;
+  background-color: rgb(163, 163, 163);
+}
+
+header h2
+{
+  padding: 0.5em 0em;
+  text-align: center;
+  background-color: rgb(255, 58, 58);
 }
 
 #containerBlocksTitle
@@ -156,4 +168,18 @@ header
 #descriptionHow
 {
   margin-bottom: 1em;
+}
+
+.mobileMenu
+{
+  display: none;
+}
+
+#logoMenu
+{
+  background-image: url("../image/logoFinale.png");
+  background-repeat: no-repeat;
+  background-size: 10% 100%;
+  background-position: right;
+  margin: 0.4em 0 0.2em 18em;
 }

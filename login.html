@@ -9,30 +9,13 @@
 		<meta name="author" content="Luca Bertolini, Marco Bonolo, Mauro Carlin, Nicola Tintorri" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<<<<<<< HEAD
-		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
-	</head>
-	<body>
-		<header>
-      <ul id="navbar">
-        <li><a href="#titleWhat">COSA</a></li>
-        <li><a href="#titleHow">COME</a></li>
-        <li><a href="#titleWho">CHI</a></li>
-        <li><a href="index.html">INDEX</a></li>
-      </ul>
-      <div id="logo">
-        <h1 class="hide">SWEgo</h1>
-        <h2>Software Engineering Group Organizer</h2>
-      </div>
-    </header>
-=======
-		<link href="mobile.css" rel="stylesheet" type="text/css" />
+		<link href="mobile.css" rel="stylesheet" type="text/css" media="mobile" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 		<script src="script/nav.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1 id="logo" class="hide">SWEgo</h1>
 			<div class="mobileMenu" onClick="showMenu();">
 				<span></span>
 				<span></span>
@@ -40,26 +23,27 @@
 			</div>
 			<nav>
 				<ul>
-					<li>HOMEPAGE</li>
-					<li>LOGIN</li>
-					<li>REGISTRATI</li>
-					<li>CHI SIAMO?</li>
+					<li><a href="index.html">HOMEPAGE</a></li>
+					<li><a href="index.html">REGISTRATI</a></li>
+					<li><a href="index.html">CHI SIAMO?</a></li>
+					<li><h1 id="logoMenu" class="hide">SWEgo</h1></li>
 				</ul>
 			</nav>
 		</header>
-		<p>Accedi al tuo profilo per sfruttare tutte le funzionalit&agrave; offerte da SWEgo e per gestire il tuo progetto.</p>
-		<p>Non hai un account? <a href="#">Registrati!</a></p>
->>>>>>> 7f204ddb78470a2f581e7739598e5dff4d329e90
-		<form method="post" action="" id="user_login">
-			<fieldset form="user_login">
-				<legend>Form di login</legend>
-				<label for="groupname">Username</label>
-				<input id="groupname" name="groupname" type="text" required="required" maxlength="20" />
-				<label for="password">Password</label>
-				<input id="password" name="password" type="password" required="required" />
-				<input type="submit" name="login" value="ACCEDI" />
-			</fieldset>
-		</form>
+		<content>
+			<p>Accedi al tuo profilo per sfruttare tutte le funzionalit&agrave; offerte da SWEgo e per gestire il tuo progetto.</p>
+			<p>Non hai un account? <a href="#">Registrati!</a></p>
+			<form method="post" action="" id="user_login">
+				<fieldset form="user_login">
+					<legend>Form di login</legend>
+					<label for="groupname">Username</label>
+					<input id="groupname" name="groupname" type="text" required="required" maxlength="20" />
+					<label for="password">Password</label>
+					<input id="password" name="password" type="password" required="required" />
+					<input type="submit" name="login" value="ACCEDI" />
+				</fieldset>
+			</form>
+		<content>
 		<footer>
 		</footer>
 	</body>

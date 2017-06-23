@@ -24,211 +24,223 @@ body {
   overflow: hidden;
 }
 
-header {
-  margin-bottom: 2em;
-}
+@media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 2em;
+  }
 
-nav {
-  overflow: hidden;
-  background-color: rgb(255, 58, 58);
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+  nav {
+    overflow: hidden;
+    background-color: rgb(255, 58, 58);
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
-nav ul {
-  list-style-type: none;
-}
+  nav ul {
+    list-style-type: none;
+  }
 
-nav li {
-  float: left;
-}
+  nav li {
+    float: left;
+  }
 
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0.875em 1em;
-  text-decoration: none;
-}
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+  }
 
-nav li a:hover {
-  background-color: #111111;
-}
+  .here {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+  }
 
-#logo {
-  background-image: url("../image/logoFinale.png");
-  background-repeat: no-repeat;
-  background-size: 50% 90%;
-  background-position: center;
-  height: 5em;
-  margin: 1.4em auto 0 auto;
-  background-color: rgb(163, 163, 163);
-}
+  nav li a:hover {
+    background-color: #111111;
+  }
 
-header h2 {
-  padding: 0.5em 0em;
-  text-align: center;
-  background-color: rgb(255, 58, 58);
-}
+  #logo {
+    background-image: url("../image/logoFinale.png");
+    background-repeat: no-repeat;
+    background-size: 50% 90%;
+    background-position: center;
+    height: 5em;
+    margin: 1.4em auto 0 auto;
+    background-color: rgb(163, 163, 163);
+  }
 
-#containerBlocksTitle {
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-}
+  header h2 {
+    padding: 0.5em 0em;
+    text-align: center;
+    background-color: rgb(255, 58, 58);
+  }
 
-.blockLogo {
-  float: left;
-  width: 15%;
-  text-align: center;
-  background-color: rgb(255, 58, 58);
-  border-radius: 1em 0 0 1em;
-  height: 5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
+  #containerBlocksTitle {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
 
-.blockTitle {
-  width: 85%;
-  margin-left: 15%;
-  text-align: center;
-  height: 5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background-color: rgb(221, 221, 221);
-  border-radius: 0 1em 0 0;
-  border-right: 0.2em solid rgb(221, 221, 221);
+  .blockLogo {
+    float: left;
+    width: 15%;
+    text-align: center;
+    background-color: rgb(255, 58, 58);
+    border-radius: 1em 0 0 1em;
+    height: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 
-}
+  .blockTitle {
+    width: 85%;
+    margin-left: 15%;
+    text-align: center;
+    height: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(221, 221, 221);
+    border-radius: 0 1em 0 0;
+    border-right: 0.2em solid rgb(221, 221, 221);
 
-.blockDescription {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  margin-left: 15%;
-  width: 85%;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border: 0.2em solid rgb(149, 149, 149);
-  border-radius: 0 0 1em 1em;
-  background-color: rgb(221, 221, 221);
-}
+  }
 
-#logoWhat {
-  background-image: url("../image/what.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .blockDescription {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 15%;
+    width: 85%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 0.2em solid rgb(149, 149, 149);
+    border-radius: 0 0 1em 1em;
+    background-color: rgb(221, 221, 221);
+  }
 
-#logoHow {
-  background-image: url("../image/how.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  #logoWhat {
+    background-image: url("../image/what.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-#logoWho {
-  background-image: url("../image/who.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  #logoHow {
+    background-image: url("../image/how.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-#titleWhat {
+  #logoWho {
+    background-image: url("../image/who.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-}
+  #titleWhat {
 
-#titleHow {
+  }
 
-}
+  #titleHow {
 
-#descriptionHow {
-  margin-bottom: 1em;
-}
+  }
 
-.mobileMenu {
-  display: none;
-}
+  #descriptionHow {
+    margin-bottom: 1em;
+  }
 
-#logoMenu {
-  background-image: url("../image/logoFinale.png");
-  background-repeat: no-repeat;
-  background-size: 10% 100%;
-  background-position: right;
-  margin: 0.4em 0 0.2em 18em;
-}
+  .mobileMenu {
+    display: none;
+  }
 
-#description_login {
-  margin-top: 5em;
-  margin-left: 20%;
-  width: 60%;
-  text-align: center;
-  background-color: #676767;
-}
+  #logoMenu {
+    width: 20%;
+    background-image: url("../image/logoFinale.png");
+    background-repeat: no-repeat;
+    background-size: 60% 90%;
+    background-position: center;
+    padding-top: 0.3em;
+    margin-left: 80%;
+  }
 
-#description_login h3{
-  padding: 0.3em 0;
+  #description_login {
+    margin-top: 5em;
+    margin-left: 20%;
+    width: 60%;
+    text-align: center;
+    background-color: #676767;
+  }
 
-}
+  #description_login h3{
+    padding: 0.3em 0;
+  }
 
-#description_login h3 a{
-  color: white;
-  font-weight: bold;
-}
+  #description_login h3 a{
+    color: white;
+    font-weight: bold;
+  }
 
-#user_login {
-  width: 30%;
-  text-align: center;
-  margin-top: 3%;
-  margin-left: 35%;
-  margin-top: 2em;
-}
+  #user_login {
+    width: 30%;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 35%;
+    margin-top: 2em;
+  }
 
-#user_login fieldset {
-  border-color: #8b0000;
-  border-radius: 0.3em;
-  border: 0.5em solid #8b0000;
-  background-color: #676767;
-}
+  #user_login fieldset {
+    border-color: #8b0000;
+    border-radius: 0.3em;
+    border: 0.5em solid #8b0000;
+    background-color: #676767;
+  }
 
-#user_login legend {
-  display: none;
-}
+  #user_login legend {
+    display: none;
+  }
 
-#user_login label {
-  display: block;
-  margin-top: 3em;
-  color: white;
-  font-weight: bold;
-}
+  #user_login label {
+    display: block;
+    margin-top: 3em;
+    color: white;
+    font-weight: bold;
+  }
 
-#user_login input[type="text"] {
-  padding: 0.5em;
-  width: 50%;
-  border-radius: 0.3em;
-  border: 0.1em solid black;
-}
+  #user_login input[type="text"] {
+    padding: 0.5em;
+    width: 50%;
+    border-radius: 0.3em;
+    border: 0.1em solid black;
+  }
 
-#user_login input[type="password"] {
-  padding: 0.5em;
-  width: 50%;
-  border-radius: 0.3em;
-  border: 0.1em solid black;
-}
+  #user_login input[type="password"] {
+    padding: 0.5em;
+    width: 50%;
+    border-radius: 0.3em;
+    border: 0.1em solid black;
+  }
 
-#user_login input[type="submit"] {
-  display: block;
-  width: 55%;
-  padding: 0.7em;
-  margin-top: 5em;
-  margin-left: 22.5%;
-  margin-bottom: 5em;
-  background-color: #8b0000;
-  color: white;
-  font-weight: bold;
-  border: 0.1em solid white;
-  border-radius: 0.3em;
-  text-transform: uppercase;
+  #user_login input[type="submit"] {
+    display: block;
+    width: 55%;
+    padding: 0.7em;
+    margin-top: 5em;
+    margin-left: 22.5%;
+    margin-bottom: 5em;
+    background-color: #8b0000;
+    color: white;
+    font-weight: bold;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+  }
+
 }

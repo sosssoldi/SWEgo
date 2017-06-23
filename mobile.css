@@ -1,9 +1,29 @@
+@font-face {
+  font-family: primaryFont;
+  src: url("../font/Roboto.ttf");
+}
+
 * {
 	margin: 0em;
 	padding: 0em;
 }
 
-@media screen and (max-width: 1024px) {
+.hide {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+@media screen and (max-width: 768px) {
+	
+	body {
+		background-image: white;
+		font-family: primaryFont;
+	}
+	
+	a {
+		color: blue;
+	}
 	
 	header {
 		width: 94%;
@@ -11,11 +31,14 @@
 		margin-left: 3%;
 	}
 	
-	h1 {
+	#logo {
 		display: block;
 		float: left;
+		width: 45%;
+		background-image: url('./image/logoFinale.png');
+		background-size: 100% 100%;
 	}
-	
+		
 	.mobileMenu {
 		display: block;
 		width: 10%;
@@ -24,6 +47,8 @@
 		border-radius: 0.4em;
 		margin-left: 88%;
 		text-align: center;
+		margin-top: 3%;
+		margin-bottom: 6%;
 	}
 	
 	.mobileMenu span {
@@ -33,8 +58,10 @@
 	}
 	
 	nav {
+		display: none;
 		width: 100%;
 		text-align: center;
+		margin-bottom: 7%;
 	}
 
 	nav	ul {
@@ -45,9 +72,55 @@
 	nav ul li {
 		display: block;
 		padding: 0.5em;
-		font-size: 1.2em;
+		font-size: 1em;
 		font-weight: bold;
 		text-align: center;
 	}
 	
+	#user_login {
+		width: 100%;
+		text-align: center;
+		margin-top: 3%;
+	}
+	
+	#user_login fieldset {
+		border: none;
+	}
+	
+	#user_login legend {
+		display: none;
+	}
+	
+	#user_login label {
+		display: block;
+		margin-top: 4%;
+	}
+	
+	#user_login input[type="text"] {
+		padding: 0.5em;
+		width: 60%;
+	}
+
+	#user_login input[type="password"] {
+		padding: 0.5em;
+		width: 60%;
+	}
+	
+	#user_login input[type="submit"] {
+		display: block;
+		width: 64%;
+		padding: 0.7em;
+		margin-top: 8%;
+		margin-left: 18%;
+		background-color: #8b0000;
+		color: white;
+		font-weight: bold;
+		border: 0.1em solid white;
+		border-radius: 0.3em;
+	}
+	
+	p {
+		margin-left: 3%;
+		width: 94%;
+	}
 }

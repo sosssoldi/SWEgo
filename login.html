@@ -14,8 +14,8 @@
 	</head>
 	<body>
 		<header>
-			<h1>SWEgo</h1>
-			<div class="mobileMenu" onClick="hideMenu();">
+			<h1 id="logo" class="hide">SWEgo</h1>
+			<div class="mobileMenu" onClick="showMenu();">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -29,6 +29,8 @@
 				</ul>
 			</nav>
 		</header>
+		<p>Accedi al tuo profilo per sfruttare tutte le funzionalit&agrave; offerte da SWEgo e per gestire il tuo progetto.</p>
+		<p>Non hai un account? <a href="#">Registrati!</a></p>
 		<form method="post" action="" id="user_login">
 			<fieldset form="user_login">
 				<legend>Form di login</legend>
@@ -36,7 +38,7 @@
 				<input id="groupname" name="groupname" type="text" required="required" maxlength="20" />
 				<label for="password">Password</label>
 				<input id="password" name="password" type="password" required="required" />
-				<input type="submit" name="login" value="Accedi" />
+				<input type="submit" name="login" value="ACCEDI" />
 			</fieldset>
 		</form>
 		<footer>

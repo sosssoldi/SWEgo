@@ -60,7 +60,38 @@
 
     public function getTable($column)
     {
-      $query = ''
+      $query = 'SELECT ';
+
+      if (in_array('usecaseid', $column))
+        $query .= 'usecaseid';
+
+      if (in_array('name', $column))
+        $query .= ', name';
+
+      if (in_array('description', $column))
+        $query .= 'description';
+
+      if (in_array('precondiction', $column))
+        $query .= ', precondition';
+
+      if (in_array('postcondiction', $column))
+        $query .= ', postcondition';
+
+      if (in_array('mainscenario', $column))
+        $query .= ', mainscenario';
+
+      if (in_array('alternativescenario', $column))
+        $query .= 'alternativescenario';
+
+      if (in_array('generalization', $column))
+        $query .= ', precondition';
+
+      if (in_array('parent', $column))
+        $query .= ', parent';
+
+      $query .= ' FROM usecase';
+
+      return $query;
     }
 
   }

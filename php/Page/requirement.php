@@ -57,7 +57,32 @@
 
     public function getTable($column)
     {
-      $query = ''
+      $query = 'SELECT ';
+
+      if (in_array('requirementid', $column))
+        $query .= 'requirementid';
+
+      if (in_array('description', $column))
+        $query .= 'description';
+
+      if (in_array('type', $column))
+        $query .= ', type';
+
+      if (in_array('importance', $column))
+        $query .= ', importance';
+
+      if (in_array('satisfied', $column))
+        $query .= ', satisfied';
+
+      if (in_array('parent', $column))
+        $query .= ', parent';
+
+      if (in_array('source', $column))
+        $query .= ', source';
+
+      $query .= ' FROM requirements';
+
+      return $query;
     }
 
   }

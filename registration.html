@@ -9,18 +9,28 @@
 		<meta name="author" content="Luca Bertolini, Marco Bonolo, Mauro Carlin, Nicola Tintorri" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link href="css/mobile.css" rel="stylesheet" type="text/css" />
+		<script src="script/nav.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1>SWEgo</h1>
+			<h1 id="logo" class="hide">SWEgo</h1>
+			<div class="mobileMenu" onClick="showMenu();">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<nav>
 				<ul>
-					<li>Voce menu 1</li>
-					<li>Voce menu 2</li>
-					<li>Voce menu 3</li>
+					<li lang="en"><a href="index.html">HOMEPAGE</a></li>
+					<li lang="en"><a href="login.html">LOGIN</a></li>
+					<li class="here">REGISTRATI</li>
+					<li><a href="index.html#titleWho">CHI SIAMO?</a></li>
 				</ul>
 			</nav>
 		</header>
+		<p>&Egrave; molto semplice registrarsi: compila il form con i dati richiesti. In questo modo potrai accedere alle funzionalit&agrave; di SWEgo.</p>
+		<p>Sei gi&agrave; un utente? Allora esegui l'accesso: <a href="login.html" lang="en">Login</a>!</p>
 		<form method="post" action="" id="user_registration">
       <fieldset form="user_registration">
         <legend>Form di registrazione</legend>

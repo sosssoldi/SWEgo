@@ -18,6 +18,7 @@
 	
 	body {
 		background-image: white;
+		background-image: none;
 		font-family: primaryFont;
 	}
 	
@@ -35,7 +36,7 @@
 		display: block;
 		float: left;
 		width: 45%;
-		background-image: url('./image/logoFinale.png');
+		background-image: url('../image/logoFinale.png');
 		background-size: 100% 100%;
 	}
 	

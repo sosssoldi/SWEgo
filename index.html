@@ -9,23 +9,25 @@
   		<meta name="author" content="Luca Bertolini, Marco Bonolo, Mauro Carlin, Nicola Tintorri" />
   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="css/index.css" media="screen">
+      <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
   </head>
   <body>
-    <ul id="navbar">
-      <li><a href="#titleWhat">COSA</a></li>
-      <li><a href="#titleHow">COME</a></li>
-      <li><a href="#titleWho">CHI</a></li>
-      <li><a href="login.html">LOGIN</a></li>
-    </ul>
-    <div id="logo">
-      <img src="image/logoFinale.png" alt="logo SWE">
-      <h1>Software Engineering Group Organizer</h1>
-    </div>
-    <h1>SWEgo</h1>
+    <header>
+      <ul id="navbar">
+        <li><a href="#titleWhat">COSA</a></li>
+        <li><a href="#titleHow">COME</a></li>
+        <li><a href="#titleWho">CHI</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+      </ul>
+      <div id="logo">
+        <h1 class="hide">SWEgo</h1>
+        <h2>Software Engineering Group Organizer</h2>
+      </div>
+    </header>
+    <content>
     <div id="containerBlocksTitle">
       <div class="blockLogo" id="logoWhat">
-        <img src="image/what.png" alt="Cosa">
       </div>
       <div class="blockTitle" id="titleWhat">
         <h3>COSA?</h3>
@@ -39,7 +41,6 @@
         </p>
       </div>
       <div class="blockLogo" id="logoHow">
-        <img src="image/how.png" alt="Cosa">
       </div>
       <div class="blockTitle" id="titleHow">
         <h3>COME?</h3>
@@ -53,7 +54,6 @@
         </p>
       </div>
       <div class="blockLogo" id="logoWho">
-        <img src="image/who.png" alt="Cosa">
       </div>
       <div class="blockTitle" id="titleWho">
         <h3>CHI?</h3>

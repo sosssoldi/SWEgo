@@ -1,0 +1,30 @@
+html,body
+{
+  margin: 0;
+  padding: 0;
+}
+
+a
+{
+  text-decoration:underline;
+}
+
+#navbar
+{
+  display: none;
+}
+
+.blockLogo
+{
+  display: none;
+}
+
+#containerBlocksTitle h3
+{
+  padding-left: 1em;
+}
+
+#containerBlocksTitle p
+{
+  padding-left: 2em;
+}

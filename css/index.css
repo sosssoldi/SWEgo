@@ -19,7 +19,7 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
-	
+
 	body {
 		background: #ffffff url("../image/bckg.png");
 	}
@@ -67,7 +67,7 @@ html, body {
   #logo {
     background-image: url("../image/logoFinale.png");
     background-repeat: no-repeat;
-    background-size: 50% 90%;
+    background-size: 30%;
     background-position: center;
     height: 5em;
     margin: 1.4em auto 0 auto;

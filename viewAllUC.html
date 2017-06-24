@@ -9,38 +9,50 @@
   		<meta name="author" content="Luca Bertolini, Marco Bonolo, Mauro Carlin, Nicola Tintorri" />
   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+  		<link rel="stylesheet" type="text/css" href="css/mobile.css" />
+  		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
   </head>
   <body>
     <header>
-      <h1>SWEgo</h1>
-      <nav>
-        <ul>
-          <li>Voce menu 1</li>
-          <li>Voce menu 2</li>
-          <li>Voce menu 3</li>
-        </ul>
-      </nav>
-    </header>
-    <input type="search" id="searchUC" placeholder="Ricerca..." />
-    <a href=#>Inserisci Use Case</a>
-    <form id="checkColumn">
-      <fieldset>
-        <legend>Colonne da visualizzare</legend><br>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="codice" value="codice"/>Codice</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="nome" value="nome"/>Nome</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="descrizione" value="descrizione"/>Descrizione</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="precondizione" value="precondizione"/>Precondizione</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="postcondizione" value="postcondizione"/>Postcondizione</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="principale" value="principale"/>Scenario principale</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="alternativo" value="alternativo"/>Scenario alternativo</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="padre" value="padre"/>Padre</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="inclusioni" value="inclusioni"/>Inclusioni</label>
-        <label onclick="toggle.js"><input type="checkbox" checked="checked" name="estensioni" value="estensioni"/>Estensioni</label>
-      </fieldset>
-    </form>
-    <table summary="Nella Tabella viene fornito un elenco di Use Case. Ogni riga descrive uno Use Case con l'indicazione di codice, nome, descrizione, pre e post condizione.">
+			<h1 id="logo" class="hide">SWEgo</h1>
+			<div class="mobileMenu" onClick="showMenu();">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav>
+				<ul>
+					<li lang="en"><a href="index.html">HOMEPAGE</a></li>
+					<li lang="en" class="here">LOGIN</li>
+					<li><a href="registration.html">REGISTRATI</a></li>
+					<li><a href="index.html#titleWho">CHI SIAMO?</a></li>
+				</ul>
+			</nav>
+		</header>
+    <h2>VISUALIZZAZIONE DI TUTTI GLI USE CASE</h2>
+    <div id="prova">
+      <input type="search" id="search" placeholder="Ricerca..." />
+      <a href="insertUseCase.html">Inserisci Use Case</a>
+      <form method="post" action="viewAllUC.html" id="checkColumnUC">
+        <fieldset form="checkColumnUC">
+          <legend>Colonne da visualizzare</legend>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="id" value="codice"/>Id</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="nome" value="nome"/>Nome</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="descrizione" value="descrizione"/>Descrizione</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="precondizione" value="precondizione"/>Precondizione</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="postcondizione" value="postcondizione"/>Postcondizione</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="principale" value="principale"/>Scenario principale</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="alternativo" value="alternativo"/>Scenario alternativo</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="padre" value="padre"/>Padre</label>
+          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="inclusioni" value="inclusioni"/>Generalizzazione</label>
+          <input type="submit" name="columnUC" value="INVIA" />
+        </fieldset>
+      </form>
+    </div>
+    <table id="tableUC" summary="Nella Tabella viene fornito un elenco di Use Case. Ogni riga descrive uno Use Case con l'indicazione di codice, nome, descrizione, pre e post condizione.">
       <tr>
-        <th scope="col">Codice</th>
+        <th scope="col">Id</th>
         <th scope="col">Nome</th>
         <th scope="col">Descrizione</th>
         <th scope="col">Precondizione</th>
@@ -48,10 +60,142 @@
         <th scope="col">Scenario principale</th>
         <th scope="col">Scenario alternativo</th>
         <th scope="col">Padre</th>
-        <th scope="col">Inclusioni</th>
-        <th scope="col">Estensioni</th>
+        <th scope="col">Generalizzazione</th>
         <th scope="col">Operazioni</th>
       </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td><a href=""><h3 id="modifyUC" class="hide">Modifica</h3></a><a href="deleteUseCase.html"><h3 id="deleteUC" class="hide">Elimina</h3></a></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>UC1</td>
+        <td>Inserimento</td>
+        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
+        <td>dad dasda dasdadad ggrrea   aada e</td>
+        <td> ere rasr as ggre gr r r rrsrsr r</td>
+        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
+        <td> esrrerereraea er efef fg dgdfggd gfg</td>
+        <td>UC1.2</td>
+        <td></td>
+        <td></td>
+      </tr>
+
     </table>
     <footer>
     </footer>

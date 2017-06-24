@@ -21,7 +21,7 @@ html, body {
 @media screen and (min-width: 768px) {
 
 	body {
-		background: #ffffff url("../image/bckg.png");
+		background: #ffffff url("../image/bckg1.jpg");
 	}
 
   header {
@@ -65,19 +65,19 @@ html, body {
   }
 
   #logo {
-    background-image: url("../image/logoFinale.png");
+    background-image: url("../image/logofin2.png");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
     height: 5em;
     margin: 1.4em auto 0 auto;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(255, 255, 255);
   }
 
   header h2 {
     padding: 0.5em 0em;
     text-align: center;
-    background-color: rgb(255, 58, 58);
+    background-color: rgb(255, 255, 255);
   }
 
   #containerBlocksTitle {
@@ -125,7 +125,7 @@ html, body {
     padding-bottom: 1em;
     border: 0.2em solid rgb(149, 149, 149);
     border-radius: 0 0 1em 1em;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(255, 221, 221);
   }
 
   .blockDescription p{
@@ -174,12 +174,12 @@ html, body {
   #logoMenu {
     width: 100%;
 		height: 5em;
-    background-image: url("../image/logoFinale.png");
+    background-image: url("../image/logofin2.png");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
 		margin: 1.4em auto 0 auto;
-		background-color: rgb(163, 163, 163);
+		background-color: rgb(255, 255, 255);
   }
 
   p {

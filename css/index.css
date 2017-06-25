@@ -21,7 +21,7 @@ html, body {
 @media screen and (min-width: 768px) {
 
 	body {
-		background: #ffffff url("../image/bckg.png");
+
 	}
 
   header {
@@ -282,90 +282,87 @@ html, body {
   margin: 1em auto;
   width: 100%;
   text-align: center;
-  color: #ffffff;
+  color: #000;
+  border-top: 0.01em solid #000;
+  border-bottom: 0.01em solid #000;
   font-size: 3em;
-  background-color: #000;
+  background-color: rgb(255, 230, 205);
 }
 
 #operazioniUC
 {
-  float:left;
+  margin: 0 auto;
+  width: 20%;
+  margin-bottom: 1em;
 }
 
-.container_ViewUC
+#operazioniUC button
 {
-  background-color: #ffffff;
+  padding: 0.4em;
+  font-size: 1.3em;
+  width: 48%;
+  cursor: pointer;
+  border: none;
+  background-color: #ff9768;
+  box-shadow: 0 0.13em 0.18em 0 rgba(0,0,0,0.74), 0 0.17em 0.5em 0 rgba(0,0,0,0.19);
+  border: 0.01em solid #000;
+}
+
+#operazioniUC button:hover
+{
+  background-color: #db774b;
+}
+
+#operazioniUC button:active
+{
+  background-color: #db774b;
+  box-shadow: 0 0.06em 0.09em 0 rgba(0,0,0,0.74), 0 0.08em 0.25em 0 rgba(0,0,0,0.19);
+
+}
+
+#ViewUC_modifyButt
+{
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+#ViewUC_deleteButt
+{
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+#allFeaturesUC
+{
   width: 70%;
-  margin: 0 auto;
-}
-
-#containerIdentificationUC
-{
-  display: block;
-}
-
-.definitionUC
-{
-  border: 0.1em solid black;
-  padding: 1em;
-}
-
-.definitionUC h3
-{
-  float: left;
-  display: inline;
-}
-
-.definitionUC span
-{
-  font-size: 1.17em;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-}
-
-
-#idUC
-{
-  float: left;
-  width: 20%;
-}
-
-#nomeUC
-{
-  float: left;
-}
-
-#padreUC
-{
-  float: left;
-  width: 20%;
+  margin: 0 15%;
+  clear: both;
 }
 
 .featuresUC
 {
-  border: 0.1em solid black;
+  border: 0.05em solid black;
   clear: both;
+  margin-top: 1em;
+  background-color: rgb(255, 230, 205);
+  font-size: 1.3em;
+  border-radius: 1em 0 1em 0;
+  box-shadow: 0 0.06em 0.09em 0 rgba(0,0,0,0.74), 0 0.08em 0.25em 0 rgba(0,0,0,0.19);
+
 }
 
 .featuresUC h3
 {
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   text-align: center;
   margin: 1em auto;
+  border-bottom: 0.05em solid black;
+  font-size: 1.5em;
 }
 
 .featuresUC p
 {
   padding: 1em;
-  font-size: 1.10em;;
+  font-size: 1.10em;
+  text-align: center;
 }
-
-#descrizioneUC
-{
-  clear: both;
-}
-
-
 /*Fine CSS ViewUC*/

@@ -18,7 +18,7 @@ html, body {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
 	body {
 
@@ -273,96 +273,203 @@ html, body {
     border-radius: 0.3em;
     text-transform: uppercase;
   }
+
+  /*Inizio CSS ViewUC*/
+  #NumberUC
+  {
+    margin: 1em auto;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    border-top: 0.01em solid #000;
+    border-bottom: 0.01em solid #000;
+    font-size: 3em;
+    background-color: rgb(255, 230, 205);
+  }
+
+  #operazioniUC
+  {
+    margin: 0 auto;
+    width: 20%;
+    margin-bottom: 1em;
+  }
+
+  #operazioniUC button
+  {
+    padding: 0.4em;
+    font-size: 1.3em;
+    width: 48%;
+    cursor: pointer;
+    border: none;
+    background-color: #ff9768;
+    box-shadow: 0 0.13em 0.18em 0 rgba(0,0,0,0.74), 0 0.17em 0.5em 0 rgba(0,0,0,0.19);
+    border: 0.01em solid #000;
+  }
+
+  #operazioniUC button:hover
+  {
+    background-color: #db774b;
+  }
+
+  #operazioniUC button:active
+  {
+    background-color: #db774b;
+    box-shadow: 0 0.06em 0.09em 0 rgba(0,0,0,0.74), 0 0.08em 0.25em 0 rgba(0,0,0,0.19);
+
+  }
+
+  #ViewUC_modifyButt
+  {
+    border-radius: 0.5em 0 0 0.5em;
+  }
+
+  #ViewUC_deleteButt
+  {
+    border-radius: 0 0.5em 0.5em 0;
+  }
+
+  #allFeaturesUC
+  {
+    width: 70%;
+    margin: 0 15%;
+    clear: both;
+  }
+
+  .featuresUC
+  {
+    border: 0.05em solid black;
+    clear: both;
+    margin-top: 1em;
+    background-color: rgb(255, 230, 205);
+    font-size: 1.3em;
+    border-radius: 1em 0 1em 0;
+    box-shadow: 0 0.06em 0.09em 0 rgba(0,0,0,0.74), 0 0.08em 0.25em 0 rgba(0,0,0,0.19);
+
+  }
+
+  .featuresUC h3
+  {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin: 1em auto;
+    border-bottom: 0.05em solid black;
+    font-size: 1.5em;
+  }
+
+  .featuresUC p
+  {
+    padding: 1em;
+    font-size: 1.10em;
+    text-align: center;
+  }
+  /*Fine CSS ViewUC*/
+
+  /*Inizio CSS Actors*/
+
+  #systemActors
+  {
+    text-align: center;
+    margin: 1em auto;
+    width: 30%;
+    font-size: 2em;
+  }
+
+  #actorsList
+  {
+    margin: 0 auto;
+    width: 80%;
+    list-style-type: none;
+    margin-bottom: 1em;
+  }
+
+  #actorsList li
+  {
+    display: inline-table;
+    background: #fefabc;
+    padding: 1em;
+    font-size: 1.2em;
+    color: #000;
+    width: 45%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 0.4em 0.6em #333;
+  }
+
+  #actorsList li h3
+  {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    border-bottom: 0.1em solid black;
+  }
+
+  #actorsList li p
+  {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+  }
+
+  #insertActor
+  {
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  #insertActor fieldset
+  {
+    padding: 1em;
+    border: 0.1em solid rgb(75, 75, 75);
+  }
+
+  #insertActor legend
+  {
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  #insertActor label, input, textarea
+  {
+    float: left;
+    margin: 1em 0;
+  }
+
+  #insertActor label
+  {
+    display: block;
+    line-height: 1em;
+    width: 30%;
+    text-align: center;
+  }
+
+  #insertActor input, textarea
+  {
+    border: 0.1em solid #323232;
+    height: 2em;
+    line-height: 2em;
+    width: 60%;
+    padding: 0 1em;
+  }
+
+  #insertActor textarea
+  {
+    height: 5em;
+  }
+
+
+  #insertActor input[type=submit]
+  {
+    clear: both;
+    width: 30%;
+    margin-left: 30%;
+    cursor: pointer;
+
+  }
+  /*Fine CSS Actors*/
+
 }
-
-/*Inizio CSS ViewUC*/
-
-#NumberUC
-{
-  margin: 1em auto;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  border-top: 0.01em solid #000;
-  border-bottom: 0.01em solid #000;
-  font-size: 3em;
-  background-color: rgb(255, 230, 205);
-}
-
-#operazioniUC
-{
-  margin: 0 auto;
-  width: 20%;
-  margin-bottom: 1em;
-}
-
-#operazioniUC button
-{
-  padding: 0.4em;
-  font-size: 1.3em;
-  width: 48%;
-  cursor: pointer;
-  border: none;
-  background-color: #ff9768;
-  box-shadow: 0 0.13em 0.18em 0 rgba(0,0,0,0.74), 0 0.17em 0.5em 0 rgba(0,0,0,0.19);
-  border: 0.01em solid #000;
-}
-
-#operazioniUC button:hover
-{
-  background-color: #db774b;
-}
-
-#operazioniUC button:active
-{
-  background-color: #db774b;
-  box-shadow: 0 0.06em 0.09em 0 rgba(0,0,0,0.74), 0 0.08em 0.25em 0 rgba(0,0,0,0.19);
-
-}
-
-#ViewUC_modifyButt
-{
-  border-radius: 0.5em 0 0 0.5em;
-}
-
-#ViewUC_deleteButt
-{
-  border-radius: 0 0.5em 0.5em 0;
-}
-
-#allFeaturesUC
-{
-  width: 70%;
-  margin: 0 15%;
-  clear: both;
-}
-
-.featuresUC
-{
-  border: 0.05em solid black;
-  clear: both;
-  margin-top: 1em;
-  background-color: rgb(255, 230, 205);
-  font-size: 1.3em;
-  border-radius: 1em 0 1em 0;
-  box-shadow: 0 0.06em 0.09em 0 rgba(0,0,0,0.74), 0 0.08em 0.25em 0 rgba(0,0,0,0.19);
-
-}
-
-.featuresUC h3
-{
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
-  margin: 1em auto;
-  border-bottom: 0.05em solid black;
-  font-size: 1.5em;
-}
-
-.featuresUC p
-{
-  padding: 1em;
-  font-size: 1.10em;
-  text-align: center;
-}
-/*Fine CSS ViewUC*/

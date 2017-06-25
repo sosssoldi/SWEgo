@@ -26,21 +26,37 @@
         </ul>
       </nav>
     </header>
-		<h2>ATTORI DEL SISTEMA</h2>
+		<h2 id="systemActors">ATTORI DEL SISTEMA</h2>
 		<ul id="actorsList">
 			<li>
 				<h3>Nome attore 1</h3>
-				<p>Descrizione</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi rutrum urna blandit tristique. Nulla tincidunt ultricies massa eu malesuada. Maecenas sit amet nunc quis diam placerat aliquet. Nulla facilisis facilisis nibh quis rutrum. Sed placerat tincidunt nulla, eu varius massa malesuada nec. Cras ac aliquam nulla, et finibus justo. In euismod, felis ac ornare pharetra, sem turpis pretium orci, eget posuere massa massa vitae turpis. Donec a mi at sem sodales ornare. Duis vitae magna et tellus venenatis consequat ut sit amet metus. Vestibulum tempor sagittis dui sed mattis
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi rutrum urna blandit tristique. Nulla tincidunt ultricies massa eu malesuada. Maecenas sit amet nunc quis diam placerat aliquet. Nulla facilisis facilisis nibh quis rutrum. Sed placerat tincidunt nulla, eu varius massa malesuada nec. Cras ac aliquam nulla, et finibus justo. In euismod, felis ac ornare pharetra, sem turpis pretium orci, eget posuere massa massa vitae turpis. Donec a mi at sem sodales ornare. Duis vitae magna et tellus venenatis consequat ut sit amet metus. Vestibulum tempor sagittis dui sed mattis
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi rutrum urna blandit tristique. Nulla tincidunt ultricies massa eu malesuada. Maecenas sit amet nunc quis diam placerat aliquet. Nulla facilisis facilisis nibh quis rutrum. Sed placerat tincidunt nulla, eu varius massa malesuada nec. Cras ac aliquam nulla, et finibus justo. In euismod, felis ac ornare pharetra, sem turpis pretium orci, eget posuere massa massa vitae turpis. Donec a mi at sem sodales ornare. Duis vitae magna et tellus venenatis consequat ut sit amet metus. Vestibulum tempor sagittis dui sed mattis
+
+				</p>
 				<a href="#" onClick="removeActor(0)">Elimina</a>
 			</li>
 			<li>
 				<h3>Nome attore 2</h3>
-				<p>Descrizione</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi rutrum urna blandit tristique. Nulla tincidunt ultricies massa eu malesuada. Maecenas sit amet nunc quis diam placerat aliquet. Nulla facilisis facilisis nibh quis rutrum. Sed placerat tincidunt nulla, eu varius massa malesuada nec. Cras ac aliquam nulla, et finibus justo. In euismod, felis ac ornare pharetra, sem turpis pretium orci, eget posuere massa massa vitae turpis. Donec a mi at sem sodales ornare. Duis vitae magna et tellus venenatis consequat ut sit amet metus. Vestibulum tempor sagittis dui sed mattis
+				</p>
 				<a href="#" onClick="removeActor(1)">Elimina</a>
 			</li>
+			<li>
+				<h3>Nome attore 2</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi rutrum urna blandit tristique. Nulla tincidunt ultricies massa eu malesuada. Maecenas sit amet nunc quis diam placerat aliquet. Nulla facilisis facilisis nibh quis rutrum. Sed placerat tincidunt nulla, eu varius massa malesuada nec. Cras ac aliquam nulla, et finibus justo. In euismod, felis ac ornare pharetra, sem turpis pretium orci, eget posuere massa massa vitae turpis. Donec a mi at sem sodales ornare. Duis vitae magna et tellus venenatis consequat ut sit amet metus. Vestibulum tempor sagittis dui sed mattis
+				</p>
+				<a href="#" onClick="removeActor(1)">Elimina</a>
+			</li>
+			
 		</ul>
-		<form method="post" action="#" onSubmit="addActor(); return false;">
-			<fieldset>
+		<form id="insertActor" method="post" action="#" onSubmit="addActor(); return false;">
+			<fieldset form="insertActor">
+				<legend>Inserisci Attore:</legend>
 				<label for="actorName">Nome</label>
 				<input id="actorName" name="nome" type="text" required="required" autocomplete="off" />
 				<label for="actorDescription">Descrizione</label>

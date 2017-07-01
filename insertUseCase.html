@@ -9,22 +9,32 @@
 		<meta name="author" content="Luca Bertolini, Marco Bonolo, Mauro Carlin, Nicola Tintorri" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/mobile.css" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 		<script src="script/uc.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1>SWEgo</h1>
+			<h1 id="logo" class="hide">SWEgo</h1>
+			<div class="mobileMenu" onClick="showMenu();">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<nav>
 				<ul>
-					<li>Voce menu 1</li>
-					<li>Voce menu 2</li>
-					<li>Voce menu 3</li>
+					<li lang="en"><a href="index.html">HOMEPAGE</a></li>
+					<li lang="en" class="here">LOGIN</li>
+					<li><a href="registration.html">REGISTRATI</a></li>
+					<li><a href="index.html#titleWho">CHI SIAMO?</a></li>
 				</ul>
 			</nav>
 		</header>
 		<h2>INSERISCI USE CASE</h2>
-		<form method="post" action="#">
-			<fieldset>
+		<form method="post" action="#" id="insertUC">
+			<fieldset form="insertUC">
+				<legend>Form per l'inserimento di uno Use Case</legend>
 				<label for="insertNameUC">Nome</label>
 				<input id="insertNameUC" name="nome" type="text" required="required" />
 				<label for="insertPadreUC">Padre</label>
@@ -55,7 +65,7 @@
 					<option>1.1.5</option>
 					<option>2.3.6</option>
 				</select>
-				<fieldset>
+				<fieldset form="insertUC">
 					<label for="insertActorsSelectorUC">Seleziona attori</label>
 					<select id="insertActorsSelectorUC" name="selezionaAttori" multiple="multiple" onChange="addActor();">
 						<option>Mauro</option>

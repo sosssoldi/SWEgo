@@ -280,25 +280,30 @@ html, body {
     margin-bottom: 1em;
   }
 
-  #prova {
-    float: left;
+  #manageUC {
     background-color: white;
     border: 0.2em solid red;
     border-radius: 0.5em;
-    position: fixed;
-    width: 18%;
-    margin-top: 3em;
+    width: 80%;
+    margin-top: 1em;
+    margin-left: 10%;
+    margin-bottom: 2em;
   }
 
-  #prova a {
-    display: block;
-    padding: 0.5em 0 0.5em 10%;
-    border-bottom: 0.2em solid red;
+  #manageUC a {
+    margin: 2em 10% 1em 40%;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  #manageUC a:hover {
+    font-weight: bold;
   }
 
   #search {
-    margin: 0.5em 0 0 10%;
-    width: 80%;
+    display: inline;
+    margin: 2em 0 1em 10%;
+    width: 25%;
   }
 
   #checkColumnUC legend {
@@ -309,26 +314,24 @@ html, body {
 
   #checkColumnUC fieldset {
     border-style: none;
+    border-top: 0.2em solid red;
   }
 
   #checkColumnUC label {
-    display: block;
     padding: 0.2em;
-    margin-left: 10%;
+    margin-left: 1em;
   }
 
   #checkColumnUC input[type="submit"] {
-    margin: 1.5em 0 1.5em 10%;
-    width: 80%;
-    background-color: red;
+    margin: 1.5em 0 1.5em 35%;
+    width: 30%;
+    border-color: red;
     padding: 0.3em;
     text-transform: uppercase;
   }
 
   #tableUC {
     display: block;
-    margin-left: 19%;
-    margin-right: 1%;
     background-color: white;
     border: 0.1em solid black;
     border-collapse: collapse
@@ -342,23 +345,79 @@ html, body {
 
   #tableUC td {
     border: 0.1em solid black;
-    padding: 0.1em 0.1em;
+    padding: 0.1em;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  #tableUC td a{
+    display: block;
   }
 
   #modifyUC
   {
     background-image: url("../image/edit.png");
-    background-size: 15%;
+    background-size: 20%;
     background-repeat: no-repeat;
-    display: block;
     background-position: center;
   }
 
   #deleteUC
   {
     background-image: url("../image/delete.png");
-    background-size: 15%;
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  #insertUC {
+    width: 80%;
+    margin: 2em 0 4em 10%;
+  }
+
+  #insertUC fieldset {
+    border-style: none;
+    background-color: white;
+  }
+
+  #insertUC legend {
+    display: none;
+  }
+
+  #insertUC label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+
+  }
+
+  #insertUC select {
+    display: block;
+    width: 20%;
+    margin: 0.5em 0 1em 40%;
+  }
+
+  #insertUC textarea {
+    display: block;
+    width: 60%;
+    max-height: 15em;
+    margin: 0.5em 0 1em 20%;
+    resize: vertical;
+  }
+
+  #insertUC input {
+    display: block;
+    width: 36%;
+    margin: 0.5em 0 1em 32%;
+  }
+
+  #insertUC input[type="submit"] {
+    display: block;
+    width: 20%;
+    background-color: red;
+    padding: 1em 0;
+    margin-left: 40%;
   }
 }

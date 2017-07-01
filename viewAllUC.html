@@ -10,7 +10,7 @@
   		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
-  		<link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
   		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
   </head>
   <body>
@@ -31,21 +31,21 @@
 			</nav>
 		</header>
     <h2>VISUALIZZAZIONE DI TUTTI GLI USE CASE</h2>
-    <div id="prova">
+    <div id="manageUC">
       <input type="search" id="search" placeholder="Ricerca..." />
       <a href="insertUseCase.html">Inserisci Use Case</a>
       <form method="post" action="viewAllUC.html" id="checkColumnUC">
         <fieldset form="checkColumnUC">
           <legend>Colonne da visualizzare</legend>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="id" value="codice"/>Id</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="nome" value="nome"/>Nome</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="descrizione" value="descrizione"/>Descrizione</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="precondizione" value="precondizione"/>Precondizione</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="postcondizione" value="postcondizione"/>Postcondizione</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="principale" value="principale"/>Scenario principale</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="alternativo" value="alternativo"/>Scenario alternativo</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="padre" value="padre"/>Padre</label>
-          <label onclick="toggle.js"><input type="checkbox" checked="checked" name="inclusioni" value="inclusioni"/>Generalizzazione</label>
+          <label><input type="checkbox" checked="checked" name="id" value="codice" />Id</label>
+          <label><input type="checkbox" checked="checked" name="nome" value="nome" />Nome</label>
+          <label><input type="checkbox" checked="checked" name="descrizione" value="descrizione" />Descrizione</label>
+          <label><input type="checkbox" checked="checked" name="precondizione" value="precondizione" />Precondizione</label>
+          <label><input type="checkbox" checked="checked" name="postcondizione" value="postcondizione" />Postcondizione</label>
+          <label><input type="checkbox" checked="checked" name="principale" value="principale" />Scenario principale</label>
+          <label><input type="checkbox" checked="checked" name="alternativo" value="alternativo" />Scenario alternativo</label>
+          <label><input type="checkbox" checked="checked" name="padre" value="padre" />Padre</label>
+          <label><input type="checkbox" checked="checked" name="inclusioni" value="inclusioni" />Generalizzazione</label>
           <input type="submit" name="columnUC" value="INVIA" />
         </fieldset>
       </form>
@@ -64,138 +64,29 @@
         <th scope="col">Operazioni</th>
       </tr>
       <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
+        <td class="center">UC1</td>
+        <td class="center">Inserimento</td>
         <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
         <td>dad dasda dasdadad ggrrea   aada e</td>
         <td> ere rasr as ggre gr r r rrsrsr r</td>
         <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
         <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td><a href=""><h3 id="modifyUC" class="hide">Modifica</h3></a><a href="deleteUseCase.html"><h3 id="deleteUC" class="hide">Elimina</h3></a></td>
+        <td class="center">UC1.2</td>
+        <td class="center"></td>
+        <td><a href=""><span id="modifyUC" class="hide">Modifica</span></a><a href="deleteUseCase.html"><span id="deleteUC" class="hide">Elimina</span></a></td>
       </tr>
       <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
+        <td class="center">UC1</td>
+        <td class="center">Inserimento</td>
         <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
         <td>dad dasda dasdadad ggrrea   aada e</td>
         <td> ere rasr as ggre gr r r rrsrsr r</td>
         <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
         <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
+        <td class="center">UC1.2</td>
+        <td class="center"></td>
+        <td><a href=""><span id="modifyUC" class="hide">Modifica</span></a><a href="deleteUseCase.html"><span id="deleteUC" class="hide">Elimina</span></a></td>
       </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>UC1</td>
-        <td>Inserimento</td>
-        <td>sdfsfj udhasud ais d aiiduha iduasid aisud aiud </td>
-        <td>dad dasda dasdadad ggrrea   aada e</td>
-        <td> ere rasr as ggre gr r r rrsrsr r</td>
-        <td>f dfasfsdfrw th yfrg drg drgsd e a rtar</td>
-        <td> esrrerereraea er efef fg dgdfggd gfg</td>
-        <td>UC1.2</td>
-        <td></td>
-        <td></td>
-      </tr>
-
     </table>
     <footer>
     </footer>

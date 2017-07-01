@@ -1,0 +1,80 @@
+* {
+  margin: 0em;
+  padding: 0em;
+}
+
+@font-face {
+    font-family: primaryFont;
+    src: url("../font/Roboto.ttf");
+}
+
+html, body {
+  font-family: primaryFont;
+}
+
+.hide {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header {
+  margin-bottom: 15em;
+}
+
+#logo {
+  width: 18%;
+  height: 2em;
+  background-color: white;
+	background-image: url("../image/logoNuovo.jpg");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 0.3em;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  display: inline;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 82%;
+  margin-left: 18%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 3em;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.2em 1em;
+  text-decoration: none;
+  border: 0.2em solid white;
+}
+
+nav li a:hover {
+  border-bottom: 0.2em solid #01560b;
+  color: #01560b;
+  font-weight: bold;
+}
+
+.here {
+  display: block;
+  color: #01560b;
+  text-align: center;
+  padding: 1.2em 1em;
+  text-decoration: none;
+  border: 0.2em solid white;
+  font-weight: bold;
+}

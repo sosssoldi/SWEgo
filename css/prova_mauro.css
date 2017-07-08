@@ -10,24 +10,22 @@
 
 html, body {
   font-family: primaryFont;
+  background-color: #b7b2b2;
 }
 
 .hide {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-}
-
-header {
-  margin-bottom: 15em;
+  height: 0;
 }
 
 #logo {
   width: 18%;
   height: 2em;
-  background-color: white;
+  background-color: #01560b;
 	background-image: url("../image/logoNuovo.jpg");
-	background-size: 60%;
+	background-size: 55%;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 0.3em;
@@ -38,7 +36,7 @@ header {
 nav {
   display: inline;
   overflow: hidden;
-  background-color: white;
+  background-color: #01560b;
   position: fixed;
   top: 0;
   width: 82%;
@@ -56,25 +54,126 @@ nav li {
 
 nav li a {
   display: block;
-  color: black;
+  color: #b7b2b2;
   text-align: center;
   padding: 1.2em 1em;
   text-decoration: none;
-  border: 0.2em solid white;
+  border: 0.2em solid #01560b;
 }
 
 nav li a:hover {
-  border-bottom: 0.2em solid #01560b;
-  color: #01560b;
+  border-bottom: 0.2em solid white;
+  color: white;
   font-weight: bold;
 }
 
 .here {
   display: block;
-  color: #01560b;
+  color: white;
   text-align: center;
   padding: 1.2em 1em;
   text-decoration: none;
-  border: 0.2em solid white;
+  border: 0.2em solid #01560b;
   font-weight: bold;
+}
+
+#formGeneral {
+  width: 60%;
+  margin: 0 20%;
+  padding: 5em 0 4.9em 0;
+  background-color: white;
+  border-left: 0.2em solid #01560b;
+  border-right: 0.2em solid #01560b;
+}
+
+#formGeneral h2 {
+  text-align: center;
+  font-size: bold;
+  color: #01560b;
+  padding: 2em 0em;
+}
+
+#formGeneral p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#user_login {
+  width: 60%;
+  margin: 2em 20%;
+}
+
+#user_login fieldset {
+  border: none;
+}
+
+#user_login legend {
+  display: none;
+}
+
+#user_login label {
+  display: block;
+  margin-top: 3%;
+  margin-left: 20%;
+  color: #01560b;
+
+}
+
+#user_login input {
+  padding: 0.5em;
+  width: 60%;
+  margin-left: 20%;
+}
+
+#user_login input[type="submit"] {
+  display: block;
+  width: 64%;
+  padding: 0.7em;
+  margin: 7% 0% 6% 20%;
+  background-color: white;
+  font-weight: bold;
+  border: 0.3em solid #01560b;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  color: #01560b;
+}
+
+#user_registration {
+  width: 60%;
+  margin: 2em 20%;
+}
+
+#user_registration fieldset {
+  border: none;
+}
+
+#user_registration legend {
+  display: none;
+}
+
+#user_registration label {
+  display: block;
+  margin-top: 3%;
+  margin-left: 20%;
+  color: #01560b;
+
+}
+
+#user_registration input {
+  padding: 0.5em;
+  width: 60%;
+  margin-left: 20%;
+}
+
+#user_registration input[type="submit"] {
+  display: block;
+  width: 64%;
+  padding: 0.7em;
+  margin: 7% 0% 6% 20%;
+  background-color: white;
+  font-weight: bold;
+  border: 0.3em solid #01560b;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  color: #01560b;
 }

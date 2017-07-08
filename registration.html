@@ -9,10 +9,9 @@
 		<meta name="author" content="Luca Bertolini, Marco Bonolo, Mauro Carlin, Nicola Tintorri" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="css/mobile.css" media="mobile" />
+		<link rel="stylesheet" type="text/css" href="css/prova_mauro.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/mobile.css" />
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
-		<script src="script/nav.js"></script>
 	</head>
 	<body onLoad="hideMenu();">
 		<header>
@@ -31,22 +30,25 @@
 				</ul>
 			</nav>
 		</header>
-		<p>&Egrave; molto semplice registrarsi: compila il form con i dati richiesti. In questo modo potrai accedere alle funzionalit&agrave; di SWEgo.</p>
-		<p>Sei gi&agrave; un utente? Allora esegui l'accesso: <a href="login.html" lang="en">Login</a>!</p>
-		<form method="post" action="" id="user_registration">
-      <fieldset form="user_registration">
-        <legend>Form di registrazione</legend>
-        <label for="email">Email</label>
-        <input id="email" name="email" type="text" required="required" autocomplete="off" />
-        <label for="username">Username</label>
-        <input id="username" name="username" type="text" required="required" autocomplete="off" maxlength="20" />
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password" required="required" autocomplete="off" />
-        <label for="check_password">Conferma password</label>
-        <input id="check_password" name="check_password" type="password" required="required" autocomplete="off" />
-				<input type="submit" name="registra" namevalue="Registra" />
-      </fieldset>
-    </form>
+		<div id="formGeneral">
+			<h2>REGISTRATI A SWEGO</H2>
+			<p>&Egrave; molto semplice registrarsi: compila il form con i dati richiesti. In questo modo potrai accedere alle funzionalit&agrave; di SWEgo.</p>
+			<p>Sei gi&agrave; un utente? Allora esegui l'accesso: <a href="login.html" lang="en">Login</a>!</p>
+			<form method="post" action="" id="user_registration">
+	      <fieldset form="user_registration">
+	        <legend>Form di registrazione</legend>
+	        <label for="email">Email</label>
+	        <input id="email" name="email" type="text" required="required" autocomplete="off" />
+	        <label for="username">Username</label>
+	        <input id="username" name="username" type="text" required="required" autocomplete="off" maxlength="20" />
+	        <label for="password">Password</label>
+	        <input id="password" name="password" type="password" required="required" autocomplete="off" />
+	        <label for="check_password">Conferma password</label>
+	        <input id="check_password" name="check_password" type="password" required="required" autocomplete="off" />
+					<input type="submit" name="registra" namevalue="Registra" />
+	      </fieldset>
+	    </form>
+		</div>
 		<footer>
 		</footer>
 	</body>
